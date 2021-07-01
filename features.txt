@@ -1,4 +1,5 @@
 PROJECT DETAILS
+---------------------------------------------------------
 
 1: image related e-commerce website
 
