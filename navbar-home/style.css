@@ -3,28 +3,36 @@
   margin: 0;
   padding: 0;
 }
+div.logo{
+  width: 200px;
+}
 #nav_bar{
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row nowrap;
   align-items: center;
-  padding: 5px;
+  padding: 10px;
   background-color: black;
 }
 .list{
   list-style-type: none;
 }
-.list li{
+.list li
+{
   font-family: 'Open Sans Condensed', sans-serif;
   display: inline-block;
-  padding: 0px 20px;
+  padding: 0px 10px;
+}
+.list li a{
   color: white;
+  text-decoration: none;
+}
+.search-bar input{
+  width: 450px;
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 150px;
 }
 .logo img{
-  margin-right: auto;
-  margin-left: auto;
-  width: 30%;
-  float: left;
-}
-.search-bar{
-  margin: auto;
+  width: 45%;
+  margin-left: 40px;
 }
