@@ -1,0 +1,30 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#nav_bar{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px;
+  background-color: black;
+}
+.list{
+  list-style-type: none;
+}
+.list li{
+  font-family: 'Open Sans Condensed', sans-serif;
+  display: inline-block;
+  padding: 0px 20px;
+  color: white;
+}
+.logo img{
+  margin-right: auto;
+  margin-left: auto;
+  width: 30%;
+  float: left;
+}
+.search-bar{
+  margin: auto;
+}
