@@ -13,7 +13,6 @@ div.logo{
   align-items: center;
   padding: 5px;
   background-color: #232A34;
-  min-width: 710px;
 }
 .list{
   display: inline-flex;
@@ -70,7 +69,7 @@ div.logo{
 @media (max-width: 1084px){
     ul.list{
       position: fixed;
-      top: 48px;
+      top: 45px;
       left: -100%;
       background: black;
       height: 100vh;
@@ -94,11 +93,46 @@ div.logo{
       display: none;
     }
     .logo{
-      margin-left: 40%;
       font-size: 30px;
     }
     .menu-btn i{
       display: block;
-      padding-left: 180px;
     }
+    .menu-btn{
+      align-items: flex-end;
+    }
+}
+/* home page */
+#home_page{
+  background-image: url(pexels-cátia.jpg);
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.title h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  color: #fff;
+  padding-bottom: 30px;
+}
+.title h3{
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+.title{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1084px)
+{
+  .title h1{
+    justify-content: flex-start;
+  }
+  .title h3{
+    justify-content: flex-start;
+  }
 }
