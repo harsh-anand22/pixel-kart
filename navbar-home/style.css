@@ -9,30 +9,96 @@ div.logo{
 #nav_bar{
   display: flex;
   flex-direction: row nowrap;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  background-color: black;
+  padding: 5px;
+  background-color: #232A34;
+  min-width: 710px;
 }
 .list{
+  display: inline-flex;
+  justify-content: center;
   list-style-type: none;
 }
 .list li
 {
   font-family: 'Open Sans Condensed', sans-serif;
-  display: inline-block;
   padding: 0px 10px;
 }
 .list li a{
+  font-size: 16px;
   color: white;
   text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+.list li a:hover{
+  color: black;
+  background: white;
+}
+.search-bar{
+  display: flex;
+  justify-content: center;
 }
 .search-bar input{
-  width: 450px;
-  height: 30px;
-  border-radius: 5px;
-  margin-right: 150px;
+  width: 500px;
+  height: 38px;
+  border-radius: 10px;
+  border-style: none;
 }
-.logo img{
-  width: 45%;
-  margin-left: 40px;
+.logo{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.fas{
+  color: #fff;
+  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.menu-btn i{
+  display: none;
+}
+#click{
+  display: none;
+}
+@media (max-width: 1084px){
+    ul.list{
+      position: fixed;
+      top: 48px;
+      left: -100%;
+      background: black;
+      height: 100vh;
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    #click:checked ~ nav ul{
+      left: 0;
+    }
+    ul li{
+      margin: 40px 0;
+    }
+    ul li a{
+      font-weight: 600;
+      font-size: 20%;
+      display: block;
+    }
+    .search-bar{
+      display: none;
+    }
+    .logo{
+      margin-left: 40%;
+      font-size: 30px;
+    }
+    .menu-btn i{
+      display: block;
+      padding-left: 180px;
+    }
 }
