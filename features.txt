@@ -29,3 +29,12 @@ PROJECT DETAILS
 11: hard copy of the product can be delivered. if seller has white listed the area pin-code
 
 12: seller can select an area and all the pin-codes of that area will be white listed.
+
+
+REQUIREMENTS
+____________________________________________________________________
+
+i. Image width must be greater than 500px
+
+ii. Keep check on maximum size of image so that website UI can load smoothly. 
+	If possible accept two images, 1 original and 1 for displaying(approx 300kb)
