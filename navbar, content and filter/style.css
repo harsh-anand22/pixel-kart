@@ -1,0 +1,137 @@
+/*--------------- navigation bar-------------*/
+div.logo{
+  width: 200px;
+}
+#nav_bar{
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4%;
+  background-color: #232A34;
+}
+.list{
+  display: inline-flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.list li
+{
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 0px 10px;
+}
+.list li a{
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+.list li a:hover{
+  color: black;
+  background: white;
+}
+.search-bar{
+  display: flex;
+  justify-content: center;
+}
+.search-bar input{
+  width: 500px;
+  height: 38px;
+  border-radius: 10px;
+  border-style: none;
+}
+.logo{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.fas{
+  color: #fff;
+  font-size: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.menu-btn i{
+  display: none;
+}
+#click{
+  display: none;
+}
+@media (max-width: 1200px){
+    .search-bar{
+      position:fixed;
+      top: 44px;
+      width: 100%;
+      background: black;
+      left: -100%;
+      transition: all 0.3s ease;
+      padding-top: 10px;
+      padding-bottom: 5px;
+    }
+    ul.list{
+      position: fixed;
+      top: 93px;
+      left: -100%;
+      background: black;
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    #click:checked ~ nav ul{
+      left: 0;
+    }
+    #click:checked ~ #bar--{
+      left: 0;
+    }
+    ul li{
+      margin: 40px 0;
+    }
+    .list ul li a{
+      font-weight: 600;
+      font-size: 20px;
+      display: block;
+    }
+    .logo{
+      font-size: 30px;
+    }
+    .menu-btn i{
+      display: block;
+      position: absolute;
+      right: 0;
+    }
+    .menu-btn{
+      padding-bottom: 25px;
+    }
+}
+/*---------------home page------------------ */
+#home_page{
+  background-image: url(pexels-cátia.jpg);
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.title h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  color: #fff;
+  padding-bottom: 30px;
+}
+.title h3{
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+.title{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+}

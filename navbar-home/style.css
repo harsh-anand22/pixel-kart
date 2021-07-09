@@ -11,7 +11,7 @@ div.logo{
   flex-direction: row nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding: 0.4%;
   background-color: #232A34;
 }
 .list{
@@ -66,13 +66,22 @@ div.logo{
 #click{
   display: none;
 }
-@media (max-width: 1084px){
+@media (max-width: 1200px){
+    .search-bar{
+      position:fixed;
+      top: 44px;
+      width: 100%;
+      background: black;
+      left: -100%;
+      transition: all 0.3s ease;
+      padding-top: 10px;
+      padding-bottom: 5px;
+    }
     ul.list{
       position: fixed;
-      top: 45px;
+      top: 93px;
       left: -100%;
       background: black;
-      height: 100vh;
       width: 100%;
       display: inline-block;
       text-align: center;
@@ -81,25 +90,27 @@ div.logo{
     #click:checked ~ nav ul{
       left: 0;
     }
+    #click:checked ~ #bar--{
+      left: 0;
+    }
     ul li{
       margin: 40px 0;
     }
-    ul li a{
+    .list ul li a{
       font-weight: 600;
-      font-size: 20%;
+      font-size: 20px;
       display: block;
-    }
-    .search-bar{
-      display: none;
     }
     .logo{
       font-size: 30px;
     }
     .menu-btn i{
       display: block;
+      position: absolute;
+      right: 0;
     }
     .menu-btn{
-      align-items: flex-end;
+      padding-bottom: 25px;
     }
 }
 /* home page */
@@ -127,12 +138,4 @@ div.logo{
   align-items: center;
   justify-content: center;
 }
-@media (max-width: 1084px)
-{
-  .title h1{
-    justify-content: flex-start;
-  }
-  .title h3{
-    justify-content: flex-start;
-  }
 }
