@@ -27,7 +27,7 @@ function reInitializeProducts(images,descriptions,prices){
     }
 }
 document.getElementById("contentAndFilter").innerHTML+=`
-    <div class="contentArea col-sm-12 col-md-9" id="products">
+    <div class="contentArea col-sm-12" id="products">
     </div>
 `;
     let productDescription=["Beach Image","Vacation Photo","Pool Pic","Random Click","Shore Photo","Ocean Beauty","Food Cravings"];

@@ -4,6 +4,12 @@
     margin: 0px;
     padding: 0px;
 }
+
+.singleFilter{
+  break-inside: avoid-column;
+  overflow-x: auto;
+}
+
 /*--------------- navigation bar------------- */
 div.logo{
   width: 200px;

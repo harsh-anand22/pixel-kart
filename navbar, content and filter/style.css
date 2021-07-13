@@ -1,3 +1,12 @@
+.singleFilter{
+  break-inside: avoid-column;
+  overflow-x: auto;
+}
+
+#filter{
+  border: 2px solid black;
+}
+
 /*--------------- navigation bar-------------*/
 div.logo{
   width: 200px;
@@ -133,5 +142,4 @@ div.logo{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
 }

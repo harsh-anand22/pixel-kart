@@ -4,6 +4,11 @@
     margin: 0px;
     padding: 0px;
 }
+.singleFilter{
+    break-inside: avoid-column;
+    overflow-x: auto;
+}
+
 .contentArea{
     position: relative;
     padding: 20px;
