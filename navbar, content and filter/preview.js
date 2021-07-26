@@ -1,7 +1,7 @@
 document.getElementById("contentAndFilter").innerHTML+=`
-    <div class="pop_up">
-        <div class="img_box">
-            <img src="" alt="/" class="full_img">
+    <div id="pop_up">
+        <div id="img_box">
+            <img src="" alt="/" id="full_img">
             <i class="clickable fas fa-times" id="cross"></i>
             <i class="clickable fas fa-phone"></i>
             <i class="clickable fas fa-cart-plus"></i>
@@ -10,9 +10,9 @@ document.getElementById("contentAndFilter").innerHTML+=`
     </div>
 `;
 
-let pop = document.getElementsByClassName("pop_up")[0];
-let img_box = document.getElementsByClassName("img_box")[0];
-let imgg = document.getElementsByClassName("full_img")[0];
+let pop = document.getElementById("pop_up");
+let img_box = document.getElementById("img_box");
+let imgg = document.getElementById("full_img");
 
 document.querySelectorAll(".product").forEach(item => 
 {
@@ -53,4 +53,12 @@ document.getElementById("cross").addEventListener('click', ev =>
     imgg.src = "";
     imgg.style.display = "none";
     pop.style.display = "none";
+});
+
+pop.addEventListener("click",(e)=>{
+    if(e.target==pop){
+        imgg.src = "";
+        imgg.style.display = "none";
+        pop.style.display = "none";
+    }
 })
