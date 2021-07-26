@@ -200,6 +200,37 @@ img{
     transition: 0.25 ease-in-out;
     right: 0px;
 }
+i.fas.fa-times{
+  position: absolute;
+  top: 16%;
+  right: 0%;
+  z-index: 1;
+  display: block;
+}
+i.fas.fa-phone{
+  position: absolute;
+  bottom: 18%;
+  left: 0%;
+  font-size: 25px;
+  z-index: 1;
+  display: block;
+}
+i.fas.fa-cart-plus{
+  position: absolute;
+  bottom: 18%;
+  left: 18%;
+  font-size: 25px;
+  z-index: 1;
+  display: block;
+}
+.buy_now{
+  position: absolute;
+  bottom: 18%;
+  right: 5%;
+  /* font-size: 30px; */
+  z-index: 1;
+  display: block;
+}
 .product:hover .description,.product:hover .price{
     opacity: 1;
 }

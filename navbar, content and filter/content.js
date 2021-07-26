@@ -29,6 +29,15 @@ function reInitializeProducts(images,descriptions,prices){
 document.getElementById("contentAndFilter").innerHTML+=`
     <div class="contentArea col-sm-12" id="products">
     </div>
+    <div class="pop_up">
+        <div class="img_box">
+            <img src="" alt="/" class="full_img">
+            <i class="fas fa-times" id="cross"></i>
+            <i class="fas fa-phone"></i>
+            <i class="fas fa-cart-plus"></i>
+            <button type="button" class="btn btn-primary buy_now">Buy Now</button>
+        </div>
+    </div>
 `;
     let productDescription=["Beach Image","Vacation Photo","Pool Pic","Random Click","Shore Photo","Ocean Beauty","Food Cravings"];
     let productPrice=["Rs. 200","Rs.150","Rs.300","Rs.50","Rs.100","Rs.150","Rs.75"];
