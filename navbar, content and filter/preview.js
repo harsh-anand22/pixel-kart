@@ -1,3 +1,15 @@
+document.getElementById("contentAndFilter").innerHTML+=`
+    <div class="pop_up">
+        <div class="img_box">
+            <img src="" alt="/" class="full_img">
+            <i class="clickable fas fa-times" id="cross"></i>
+            <i class="clickable fas fa-phone"></i>
+            <i class="clickable fas fa-cart-plus"></i>
+            <button type="button" class="btn btn-primary buy_now">Buy Now</button>
+        </div>
+    </div>
+`;
+
 let pop = document.getElementsByClassName("pop_up")[0];
 let img_box = document.getElementsByClassName("img_box")[0];
 let imgg = document.getElementsByClassName("full_img")[0];
