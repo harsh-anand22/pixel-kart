@@ -147,7 +147,7 @@ ul.list{
     left: 0;
   }
   .list li{
-    margin: 40px 0;
+    margin: 55px 0;
   }
   .list ul li a{
     font-weight: 600;
@@ -160,6 +160,9 @@ ul.list{
   .menu-btn i{
     display: block;
   }
+}
+.clr-1{
+  color: #ffffff;
 }
 /* -------------------content and filter---------------------- */
 .contentArea{

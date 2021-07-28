@@ -11,15 +11,18 @@ document.getElementById("contentAndFilter").innerHTML+=`
   <nav>
     <ul class="list">
       <li><a href="#">Home</a></li>
-      <li><a href="#">Gallery</a></li>
-      <li><a href="#">Upload</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
+      <li class="d-none d-xl-inline"><a href="#">Cart</a></li>
+      <li><a href="#" class="btn-success">Login</a></li>
     </ul>
   </nav>
-  <label for="click" class="menu-btn">
-    <i class="fas fa-bars"></i>
-  </label>
+  <div class="d-flex">
+    <a href="#" class="btn btn-light btn-sm d-xl-none">Cart</a>
+    <label for="click" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </label>
+  </div>
 </header>
 <!----homepage----------->
 <section id="home_page">
