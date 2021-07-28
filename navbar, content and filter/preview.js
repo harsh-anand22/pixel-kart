@@ -13,6 +13,7 @@ document.getElementById("contentAndFilter").innerHTML+=`
 let pop = document.getElementById("pop_up");
 let img_box = document.getElementById("img_box");
 let imgg = document.getElementById("full_img");
+let prod = document.getElementsByClassName("contentArea")[0];
 
 document.querySelectorAll(".product").forEach(item => 
 {
@@ -46,6 +47,8 @@ document.querySelectorAll(".product").forEach(item =>
         imgg.style.left = "50%";
         imgg.style.transform = "translate(-50%, -50%)";
         imgg.style.display = "block";
+
+        prod.style.pointerEvents = "none";
     })
 })
 document.getElementById("cross").addEventListener('click', ev =>
@@ -53,6 +56,7 @@ document.getElementById("cross").addEventListener('click', ev =>
     imgg.src = "";
     imgg.style.display = "none";
     pop.style.display = "none";
+    prod.style.pointerEvents = "all";
 });
 
 pop.addEventListener("click",(e)=>{
@@ -60,5 +64,6 @@ pop.addEventListener("click",(e)=>{
         imgg.src = "";
         imgg.style.display = "none";
         pop.style.display = "none";
+        prod.style.pointerEvents = "all";
     }
 })
