@@ -16,9 +16,6 @@
 
 
 /*--------------- navigation bar------------- */
-div.logo{
-  width: 200px;
-}
 #nav_bar{
   position: sticky;
   top: 0;
@@ -66,8 +63,8 @@ ul.list{
 }
 .logo{
   font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 28px;
   color: #fff;
-  font-size: 16px;
   font-weight: 600;
   text-align: center;
 }
@@ -119,7 +116,7 @@ ul.list{
   }
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1199px){
   .search-bar{
     position:fixed;
     top: 44px;

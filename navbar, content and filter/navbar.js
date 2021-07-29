@@ -1,4 +1,4 @@
-document.getElementById("contentAndFilter").innerHTML+=`
+document.getElementById("navigation").innerHTML+=`
 <!----navbar------------->
 <header id="nav_bar">
   <div class="logo">
@@ -6,7 +6,7 @@ document.getElementById("contentAndFilter").innerHTML+=`
   </div>
   <input type="checkbox" id="click">
   <div class="search-bar" id="bar--">
-    <input type="text" placeholder="  Search For Photos" >
+    <input type="text" class="px-3" placeholder="Search For Photos" >
   </div>
   <nav>
     <ul class="list">
@@ -17,8 +17,8 @@ document.getElementById("contentAndFilter").innerHTML+=`
       <li><a href="#" class="btn-success">Login</a></li>
     </ul>
   </nav>
-  <div class="d-flex">
-    <a href="#" class="btn btn-light btn-sm d-xl-none">Cart</a>
+  <div class="d-xl-none d-flex">
+    <a href="#" class="btn btn-outline-light border-0 d-xl-none mx-3">Cart</a>
     <label for="click" class="menu-btn">
       <i class="fas fa-bars"></i>
     </label>

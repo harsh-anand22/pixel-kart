@@ -1,5 +1,5 @@
 document.getElementById("contentAndFilter").innerHTML+=`
-    <div id="pop_up">
+    <div id="pop_up" class="d-none">
         <div id="img_box">
             <img src="" alt="/" id="full_img">
             <i class="clickable fas fa-times" id="cross"></i>
@@ -23,7 +23,7 @@ document.querySelectorAll(".product").forEach(item =>
         for(let i = 0; i < targets.length; i++)
             if(targets[i].tagName == "IMG")
                 imgg.src = targets[i].src;
-
+        pop.classList.remove("d-none");
         pop.style.background = "rgba(0, 0, 0, 0.8)";
         pop.style.position = "fixed";
         pop.style.top = 0;
