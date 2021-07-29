@@ -3,8 +3,8 @@ document.getElementById("contentAndFilter").innerHTML+=`
         <div id="img_box">
             <img src="" alt="/" id="full_img">
             <i class="clickable fas fa-times" id="cross"></i>
-            <i class="clickable fas fa-phone"></i>
-            <i class="clickable fas fa-cart-plus"></i>
+            <button type="button" class="btn btn-primary phone"><i class="clickable fas fa-phone"></i></button>
+            <button type="button" class="btn btn-primary kart"><i class="clickable fas fa-cart-plus"></i></button>
             <button type="button" class="btn btn-primary buy_now">Buy Now</button>
         </div>
     </div>

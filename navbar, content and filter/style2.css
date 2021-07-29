@@ -210,24 +210,44 @@ img{
 }
 i.fas.fa-times{
   position: absolute;
-  top: 16%;
+  top: 7%;
   right: 0%;
+  z-index: 1;
+  display: block;
+}
+.phone{
+  position: absolute;
+  bottom: 18%;
+  left: 5%;
+  height: 9%;
+  width: 8%;
+  z-index: 1;
+  display: block;
+}
+.kart{
+  position: absolute;
+  bottom: 18%;
+  left: 25%;
+  height: 9%;
+  width: 8%;
   z-index: 1;
   display: block;
 }
 i.fas.fa-phone{
   position: absolute;
-  bottom: 18%;
-  left: 0%;
-  font-size: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 16px;
   z-index: 1;
   display: block;
 }
 i.fas.fa-cart-plus{
   position: absolute;
-  bottom: 18%;
-  left: 18%;
-  font-size: 25px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 16px;
   z-index: 1;
   display: block;
 }
