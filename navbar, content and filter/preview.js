@@ -1,11 +1,13 @@
 document.getElementById("contentAndFilter").innerHTML+=`
-    <div id="pop_up" class="d-none">
-        <div id="img_box">
+    <div id="pop_up" class="d-none justify-content-center align-items-center">
+        <div id="img_box" class="">
             <img src="" alt="/" id="full_img">
-            <i class="clickable fas fa-times" id="cross"></i>
-            <button type="button" class="btn btn-primary phone"><i class="clickable fas fa-phone"></i></button>
-            <button type="button" class="btn btn-primary kart"><i class="clickable fas fa-cart-plus"></i></button>
-            <button type="button" class="btn btn-primary buy_now">Buy Now</button>
+            <i class="clickable position-absolute fas fa-times" id="cross"></i>
+            <div id="preview-controls" class="d-flex align-items-center position-absolute">
+                <button type="button" class="btn btn-success phone mx-2">Contact Seller</button>
+                <button type="button" class="btn btn-success kart mx-2" value="Add To Cart">Add To Cart</button>
+                <button type="button" class="btn btn-success buy_now">Buy Now</button>
+            </div>
         </div>
     </div>
 `;
@@ -30,22 +32,16 @@ document.querySelectorAll(".product").forEach(item =>
         pop.style.left = 0;
         pop.style.width = "100%";
         pop.style.height = "100%";
-        pop.style.display = "block";
+        pop.style.display = "flex";
 
         img_box.style.position = "absolute";
-        img_box.style.height = "70%";
-        img_box.style.width = "auto";
-        img_box.style.top = "50%";
-        img_box.style.left = "50%";
-        img_box.style.transform = "translate(-50%, -50%)";
         img_box.style.display = "block";
+        img_box.style.overflow="hidden";
 
         imgg.style.position = "realative";
-        imgg.style.height = "70%";
-        imgg.style.width = "auto";
-        imgg.style.top = "50%";
-        imgg.style.left = "50%";
-        imgg.style.transform = "translate(-50%, -50%)";
+        imgg.style.maxWidth="50vw";
+        imgg.style.minWidth="360px";
+        imgg.style.maxHeight="80vh"
         imgg.style.display = "block";
 
         prod.style.pointerEvents = "none";
@@ -53,17 +49,26 @@ document.querySelectorAll(".product").forEach(item =>
 })
 document.getElementById("cross").addEventListener('click', ev =>
 {
-    imgg.src = "";
-    imgg.style.display = "none";
     pop.style.display = "none";
     prod.style.pointerEvents = "all";
 });
 
 pop.addEventListener("click",(e)=>{
     if(e.target==pop){
-        imgg.src = "";
-        imgg.style.display = "none";
         pop.style.display = "none";
         prod.style.pointerEvents = "all";
     }
+})
+
+imgg.addEventListener("mouseover",(e)=>{
+    document.getElementById("preview-controls").style.bottom="0px";
+})
+imgg.addEventListener("mouseout",(e)=>{
+    document.getElementById("preview-controls").style.bottom="";
+})
+document.getElementById("preview-controls").addEventListener("mouseover",(e)=>{
+    document.getElementById("preview-controls").style.bottom="0px";
+})
+document.getElementById("preview-controls").addEventListener("mouseout",(e)=>{
+    document.getElementById("preview-controls").style.bottom="";
 })
