@@ -14,7 +14,7 @@ document.getElementById("navigation").innerHTML+=`
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
       <li class="d-none d-xl-inline"><a href="#">Cart</a></li>
-      <li><a href="#" class="btn-success">Login</a></li>
+      <li><a href="login.html" class="btn-success">Login</a></li>
     </ul>
   </nav>
   <div class="d-xl-none d-flex">
