@@ -17,11 +17,10 @@
     color: white;
     text-decoration: none;
 }
-.signup_sec
+.signup_sec,.login_sec
 {
     position: absolute;
     height: 65%;
-    width: 25%;
     background-color:white;
     top: 50%;
     left: 50%;
@@ -117,4 +116,163 @@
     font-family: sans-serif;
     font-size: 20px;
     font-weight: bold;
+}
+
+.login_main
+{
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #00d9de, #fa00ff);
+}
+.login_logo
+{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.login_logo a{
+    font-family: sans-serif;
+    font-size: 28px;
+    color: white;
+    text-decoration: none;
+}
+.login_sec
+{
+    position: absolute;
+    height: 65%;
+    background-color:white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+}
+.login_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.login_tag
+{
+    position: absolute;
+    font-family: sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 70%;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.login_user
+{
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.login_buyer
+{
+    border-style: solid;
+    border-width: 0.5px;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 3px;
+    padding: 2% 15%;
+    background-image: linear-gradient(-45deg, #F34498, #9B57A5);
+}
+.login_buyer span{
+    color: white;
+    font-weight: bold;
+}
+.login_seller
+{
+    border-style: solid;
+    border-width: 0.5px;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 3px;
+    padding: 2% 15%;
+}
+.login_form{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#login_email, #login_pwd
+{
+    border-radius: 3px;
+    border-width: 1px;
+    padding: 3% 15%;
+}
+.login_fp{
+    position: absolute;
+    top: 58%;
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #D696B2;
+}
+.login_btn_
+{
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%);
+    border-style: solid;
+    border-width: 0.5px;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 3px;
+    padding: 2% 38%;
+    background-image: linear-gradient(-45deg, #F34498, #9B57A5);
+}
+.login_btn_ span{
+    color: white;
+    font-weight: bold;
+}
+.not_a_mem{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: sans-serif;
+    font-size: small;
+}
+.signup_link a{
+    color: #D696B2;
+    text-decoration: none;
+}
+
+@media (min-width:576px) and (max-width:991px) {
+    .login_sec,.signup_sec{
+        width: 50%;
+    }
+}
+
+@media (max-width:575px) {
+    .login_sec,.signup_sec{
+        width: 90%;
+    }
+}
+
+@media (min-width:992px) {
+    .login_sec,.signup_sec{
+        width: 25%;
+    }
 }
